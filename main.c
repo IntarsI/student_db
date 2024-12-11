@@ -20,14 +20,15 @@ int main() {
     struct student *data;
     int  err = 0;
 
-    printf("Vai jaus velaties redzet esoso datubazi?\n");
+    printf("Vai jus velaties redzet esoso datubazi(1/0)?\n");
     scanf("%d", &yn);
     if(yn==1){
-    data = data_read(file, &c);
-	if(!data)
-	    printf("Kluda lasot datubazi: %m\n");
-	else
-	    data_output(c ,data);
+        data = data_read(file, &c);
+	    if(!data)
+		printf("Kluda lasot datubazi: %m\n");
+	    else
+		data_output(c ,data);
+	return 0;
     }
 
     printf("Ievadiet studentu skaitu: ");
