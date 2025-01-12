@@ -1,3 +1,13 @@
 *.o
 student_db
 data.bin
+.built*
+.built_check
+.configured*
+.pkgdir/
+.prepared
+.quilt_checked
+.source_dir
+apk-*
+hh.pub
+ipkg-*
