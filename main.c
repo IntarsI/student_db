@@ -20,7 +20,7 @@ int main() {
     struct student *data;
     int  err = 0;
 
-    printf("Vai jus velaties redzet esoso datubazi(1/0)?\n");
+    printf("Vai jus velaties redzet esoso studentu datubazi(1/0)?\n");
     scanf("%d", &yn);
     if(yn==1){
         data = data_read(file, &c);
