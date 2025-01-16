@@ -23,6 +23,7 @@ int main() {
     printf("Vai jus velaties redzet esoso studentu datubazi(1/0)?\n");
     scanf("%d", &yn);
     if(yn==1){
+	printf("Lasa  %s\n", file);
         data = data_read(file, &c);
 	    if(!data)
 		printf("Kluda lasot datubazi: %m\n");
@@ -31,7 +32,7 @@ int main() {
 	return 0;
     }
 
-    printf("Ievadiet studentu skaitu: ");
+    printf("Ievadiet studentu skaitu:\n");
     scanf("%d",&c);
 
     s = (struct student *)malloc(sizeof(struct student)*c);
@@ -39,8 +40,8 @@ int main() {
     data_input(c,s);
     data_output(c,s);
 
-    printf("Vai Jus velaties saglabat datus(1/0)?");
-     err = scanf("%d",&yn);
+    printf("Vai Jus velaties saglabat datus(1/0)?\n");
+     err = scanf(" %d",&yn);
     if (yn==1){
 	printf("Dati tiek saglabati %s...\n", file);
 	data_save(c,s,file);
