@@ -33,15 +33,15 @@ int main() {
     }
 
     printf("Ievadiet studentu skaitu:\n");
-    scanf("%d",&c);
+    scanf("%d", &c);
 
-    s = (struct student *)malloc(sizeof(struct student)*c);
+    s = (struct student *)malloc(sizeof(struct student) * c);
 
     data_input(c,s);
     data_output(c,s);
 
     printf("Vai Jus velaties saglabat datus(1/0)?\n");
-     err = scanf(" %d",&yn);
+     err = scanf("%d",&yn);
     if (yn==1){
 	printf("Dati tiek saglabati %s...\n", file);
 	data_save(c,s,file);
